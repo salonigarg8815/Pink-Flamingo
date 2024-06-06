@@ -227,3 +227,8 @@ textarea {
     margin-left: 30px;
     box-shadow: 2px 6px 13px 4px #BEBEBE33;
 }
+
+.connect-section .connect-image img {
+    width: 450px;
+    margin-top: 24px;
+}

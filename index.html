@@ -15,6 +15,9 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
+    <!-- Swiper from CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
     <!-- font-awesome-link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -22,7 +25,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="85">
+<body>
 
     <!-- Top-Header-section -->
     <div class="top-header">
@@ -36,28 +39,29 @@
     <!-- main-header-section -->
     <header class="main-header">
         <div class="container  mt-4">
-            <div class="row">
-                <div class="col-2">
-                    <div class="logo">
-                        <img src="images/Group 13517.png" alt="logo">
+            <div class="row header1">
+                <div class="col-3">
+                    <img src="images/Group 13517.png" alt="">
+                </div>
+                <div class="col-6 header-search">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i
+                                class="fas fa-map-marker-alt"></i>Deliver to <br>110094</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default"
+                            placeholder="Search for medication & Wellness products.. ">
                     </div>
                 </div>
-                <div class="col-2">
-
-                    <div class="deliver-box"><i class="fas fa-map-marker-alt"></i>Deliver to 110094</div>
-                </div>
-                <div class="col-5 input-field ">
-                    <input type="search" placeholder="Search for medication & Wellness products..">
-                    <!-- <i class="fas fa-search"></i> -->
-                </div>
-                <div class="col-3">
-                    <i class="fas fa-shopping-cart"></i>
-                    <i class="fas fa-user"></i>
-                    SIGN IN / SIGN UP
+                <div class="col-3 py-3">
+                    <p> <i class="fas fa-shopping-cart px-3"></i>
+                        <i class="fas fa-user-alt px-2" style="color: #FA5C98;"></i>SIGN IN / SIGN UP
+                    </p>
                 </div>
             </div>
+
+
             <!-- bottom-header-section -->
-            <div class="row ">
+            <div class="row  header-nav">
                 <div class="col">
                     <nav class="navbar navbar-expand-lg ">
                         <div class="container-fluid ">
@@ -78,7 +82,7 @@
                                             Products
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Dhoop Cones</a></li>
+                                            <li><a class="dropdown-item" href="products.html">Dhoop Cones</a></li>
                                             <li><a class="dropdown-item" href="#">Incense Holders</a></li>
                                             <li><a class="dropdown-item" href="#">Yantras</a></li>
                                             <li><a class="dropdown-item" href="#">Incense Sticks</a></li>
@@ -104,16 +108,16 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Courses</a>
+                                        <a class="nav-link" href="detailed-product-page.html">Courses</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Blogs</a>
+                                        <a class="nav-link" href="#blogs">Blogs</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Videos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact us</a>
+                                        <a class="nav-link" href="#contact">Contact us</a>
                                     </li>
 
                                 </ul>
@@ -123,20 +127,43 @@
                 </div>
             </div>
         </div>
-
-
-
     </header>
 
     <!-- Banner-section -->
     <section class="banner-section">
         <div class="container">
-            <div class="row text-center main-banner">
-                <div class="col-md-4">
-                    <img src="images/Frame.png" alt="">
-                </div>
-                <div class="col-md-8 banner-content">
-                    <p>Transform Your Mind & Soul: Discover Your Spiritual Path with Our Courses</p>
+            <div class="row">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="pre">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/Frame.png" class="d-block " alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Frame.png" class="d-block " alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Frame.png" class="d-block" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="banner-content">
+                            <p>Transform Your Mind & Soul: Discover Your Spiritual Path with Our Courses</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <i class="fas fa-chevron-left"></i>
+                        <!-- <span class="visually-hidden">Previous</span> -->
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <i class="fas fa-chevron-right"></i>
+                        <!-- <span class="fas fa-chevron-right">Next</span> -->
+                    </button>
                 </div>
             </div>
         </div>
@@ -239,55 +266,58 @@
     </section>
 
     <!-- Blog-section -->
-    <section class="blog-section">
-        <h2>Our Latest Blogs</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card border-0">
-                        <img src="images/Rectangle 65.png" alt="">
-                    </div>
-                    <div class="card body  border-0 blog-content">
-                        <h4 class="py-2 text-center">The Power of Mindfulness</h4>
-                        <p>Mindfulness is the practice of being present and fully engaged in the moment. It is about
-                            paying attention to our thoughts, feelings, and sensations in a non-judgmental way. </p>
-                        <button class="btn">Read More</button>
-                    </div>
+    <section class="review" id="blogs">
+        <h2 class="heading">Our Latest Blogs</h2>
 
+        <div class=" swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="  swiper-slide  box">
+                    <img src="images/Rectangle 69.png" alt="img">
+                    <h3>The Power of Mindfulness</h3>
+                    <p>Mindfulness is the practice of being present and fully engaged in the moment. It is about paying
+                        attention to our thoughts, feelings, and sensations in a non-judgmental way.
+                    </p>
+
+                    <button class="btn">Read More</button>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
-                    <div class="card border-0 ">
-                        <img src="images/Rectangle 67.png" alt="">
-                    </div>
-                    <div class="card body  border-0 blog-content">
-                        <h4 class="py-2 text-center">Connecting with the Divine</h4>
-                        <p>Connecting with the Divine refers to the process of establishing a spiritual connection or
-                            relationship with a higher power, such as God. </p>
-                        <button class="btn">Read More</button>
-                    </div>
+                <div class=" swiper-slide box">
+                    <img src="images/Rectangle 67.png" alt="img">
+                    <h3>Connecting with the Divine</h3>
+                    <p>Connecting with the Divine refers to the process of establishing a spiritual connection or
+                        relationship with a higher power, such as God, the Universe, or a higher consciousness.
+                    </p>
 
+                    <button class="btn">Read More</button>
                 </div>
 
-                <div class="col-md-4 col-sm-12">
-                    <div class="card border-0 ">
-                        <img src="images/Rectangle 69.png" alt="">
-                    </div>
-                    <div class="card body  border-0 blog-content">
-                        <h4 class="py-2 text-center">The Beauty of Forgiveness</h4>
-                        <p>The beauty of forgiveness lies in its transformative power. It has the ability to heal wounds
-                            and to restore relationships that have been damaged.
-                        </p>
-                        <button class="btn">Read More</button>
-                    </div>
+                <div class=" swiper-slide box">
+                    <img src="images/Rectangle 65.png" alt="img">
+                    <h3>The Beauty of Forgiveness</h3>
+                    <p>The beauty of forgiveness lies in its transformative power. It has the ability to heal wounds and
+                        to restore relationships that have been damaged. Forgiveness brings a new level of
+                        understanding.
+                    </p>
 
+                    <button class="btn">Read More</button>
+                </div>
+
+                <div class=" swiper-slide box">
+                    <img src="images/Rectangle 69.png" alt="img">
+                    <h3>The Beauty of Forgiveness</h3>
+                    <p>The beauty of forgiveness lies in its transformative power. It has the ability to heal wounds and
+                        to restore relationships that have been damaged. Forgiveness brings a new level of
+                        understanding.
+                    </p>
+
+                    <button class="btn">Read More</button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Connect-Section -->
-    <section class="connect-section">
+    <section class="connect-section" id="contact">
         <h2>Let’s Connect</h2>
         <div class="container">
             <div class="row">
@@ -309,7 +339,106 @@
     </section>
 
     <!-- footer-section -->
+    <section class="footer">
+        <div class="container">
+            <div class="row footer-panel1">
+                <div class="col-6 signup">
+                    <p><i class="fas fa-envelope px-2"></i>Sign Up To Shop Now</p>
+                </div>
+                <div class="col-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter Your Email"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="footer-panel2">
+                        <ul>
+                            <p>Contact Us</p>
+                            <a href="">careers</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact</a>
+                            <a href="">+25470101010</a>
+                            <a href="">Amazon sciences</a>
+                        </ul>
+                        <ul>
+                            <p>Information</p>
+                            <a href="">careers</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact</a>
+                            <a href="">Investor relations</a>
+                            <a href="">Blogs</a>
+                        </ul>
+                        <ul>
+                            <p>Account</p>
+                            <a href="">careers</a>
+                            <a href="">Blog</a>
+                            <a href="">About Amazon</a>
+                            <a href="">Terms Of Service</a>
+                            <a href="">Help</a>
+                        </ul>
+                        <ul>
+                            <p>Quick Links</p>
+                            <a href="https://www.google.com">careers</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact</a>
+                            <a href="">Contact</a>
+                            <a href="">Cone Dhoop</a>
+                        </ul>
+                        <ul>
+                            <p>Social Media.</p>
+                            <a href="https://www.google.com">careers</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact</a>
+                            <a href="">Cone Dhoop</a>
 
+                            <div class="footer-media">
+                                <a href="@"><i class="fab fa-facebook"></i></a>
+                                <a href="@"><i class="fab fa-twitter"></i></a>
+                                <a href="@"><i class="fab fa-linkedin"></i></a>
+                                <a href="@"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Swiper from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Script file link -->
+    <script>
+        //review-slider
+        var swiper = new Swiper(".review-slider", {
+            loop: true,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1020: {
+                    slidesPerView: 3,
+                },
+
+            },
+        });
+    </script>
 
 </body>
 

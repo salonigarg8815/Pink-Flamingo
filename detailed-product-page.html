@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed-product-page</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/Group 14113.png">
+
+    <!-- bootstrap CDN links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" +
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font-awesome-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Css-file-link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top-Header-section -->
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col top-header-content">QUICK BUY! Get up to 25% off on All Stones</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main-header-section -->
+    <header class="main-header">
+        <div class="container  mt-4">
+            <div class="row header1">
+                <div class="col-3">
+                    <img src="images/Group 13517.png" alt="">
+                </div>
+                <div class="col-6 header-search">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i
+                                class="fas fa-map-marker-alt"></i>Deliver to <br>110094</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default"
+                            placeholder="Search for medication & Wellness products.. ">
+                    </div>
+                </div>
+                <div class="col-3 py-3">
+                    <p> <i class="fas fa-shopping-cart px-3"></i>
+                        <i class="fas fa-user-alt px-2" style="color: #FA5C98;"></i>SIGN IN / SIGN UP
+                    </p>
+                </div>
+            </div>
+            <!-- bottom-header-section -->
+
+
+            <div class="row  header-nav">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg ">
+                        <div class="container-fluid ">
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse bottom-header" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Products
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="products.html">Dhoop Cones</a></li>
+                                            <li><a class="dropdown-item" href="#">Incense Holders</a></li>
+                                            <li><a class="dropdown-item" href="#">Yantras</a></li>
+                                            <li><a class="dropdown-item" href="#">Incense Sticks</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Pooja Thali Sets</a></li>
+                                            <li><a class="dropdown-item" href="#">Shankh</a></li>
+                                            <li><a class="dropdown-item" href="#">Kalash</a></li>
+                                            <li><a class="dropdown-item" href="#">Book Rests</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Services
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Jar Cones </a></li>
+                                            <li><a class="dropdown-item" href="#">Chandan Bamboo Dhoop</a></li>
+                                            <li><a class="dropdown-item" href="#">Backflow Cone Dhoop</a></li>
+                                            <li><a class="dropdown-item" href="#">ountain Sandal Dhoop</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Cone Sandal Dhoop</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Courses</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blogs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Videos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact us</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <!-- detailed-product-page -->
+    <div class="container detailed-product-page">
+        <p>Product > Dhoop Cones > Jar Cones</p>
+        <div class="row">
+            <div class="col-1 py-3">
+                <img src="images/Rectangle_82-removebg-preview 2 (1).png" alt="" class="py-4"><br>
+                <img src="images/image 13.png" alt="" class="py-3"><br>
+                <img src="images/image 12.png" alt="" class="py-3"><br>
+                <img src="images/image 13.png" alt="">
+            </div>
+            <div class="col-md-4 py-3">
+                <img src="images/Rectangle 82 (1).png" alt="">
+            </div>
+            <div class="col-md-7">
+                <span>Brand: Rashmi Divine Solutions</span><br>
+                <span>Scent: Floral</span><br>
+                <span>Availability: Only 2 in Stock</span>
+                <h5>Lavender Dhoop Cone Sticks Pack of 100-Piece/Jar by Rashmi Divine</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <ul>
+                    <li>Lavender Dhoop sticks activate your senses and relax the nerves, making you less anxious. They
+                        the air.</li>
+                    <li class="py-1">Lavender Crafted out of the finest quality ingredients, this leaves a magnificent
+                        and alluring
+                        ‘spiritual time</li>
+                    <li>Lavender Dhoop sticks are Charcoal Free Dhoop Sticks with soothing fragrances which don't cause
+                        headache</li>
+                </ul>
+                <span>USD(incl. of all taxes)</span>
+                <h6>$4.05 <span>$8.00</span></h6>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button sub">-</button>
+                    <button type="button one">1</button>
+                    <button type="button add">+</button>
+                </div>
+                <button class="buy">Buy Now</button>
+                <button class="cart">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- description-box -->
+
+    <div class="container description-box">
+        <div class="heading">
+            <p class="des py-1">Description</p>
+            <p>Product Information</p>
+            <p>Reviews</p>
+        </div>
+        <div class="row ">
+            <div class="col">
+                <div class=" content">
+                    <p>Dhoop incence cone made from natual hurbs and scented.Long lasting enthralling dhoop batti for
+                        regular use - encouraging and cheering dhoop incense cones. Use dhoop bati for offering your
+                        prayers
+                        or while meditating or relaxing. It will unquestionably boost up your confidence, create
+                        encouraging
+                        environment and purify the atmosphere while spreading the lingering aroma all around. Use it
+                        every
+                        morning while doing prayers, while meditating or exercising. It's one of the best incense cones
+                        that
+                        spread mesmerizing fragrance all around. Simply relax and have the time of your lives by getting
+                        these incense cones. can we use for spiritual and meditation purpose. Its great fragrance and
+                        long
+                        lasting effect. Its heavenly aroma encourages your soul and thoughts to be pure and beautiful.
+                        For
+                        uplifting and purifying the ambience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- related-product -->
+
+    <section class="related-product">
+        <h2>Related Products</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="owl-carousel owl-theme">
+
+                        <div class="item px-4">
+                            <div class="box py-2">
+                                <button class="new ">New</button>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <img src="images/Rectangle 83 (6).png" alt="">
+                            <button class="product-btn">Add to cart</button>
+                        </div>
+                        <div class="item px-4">
+                            <div class="box py-2">
+                                <button class="new ">New</button>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <img src="images/Rectangle 83 (7).png" alt="">
+                            <button class="product-btn">Add to cart</button>
+                        </div>
+                        <div class="item px-4">
+                            <div class="box py-2">
+                                <button class="new ">New</button>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <img src="images/Rectangle 82 (4).png" alt="">
+                            <button class="product-btn">Add to cart</button>
+                        </div>
+                        <div class="item px-4">
+                            <div class="box py-2">
+                                <button class="new ">New</button>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <img src="images/Rectangle 83 (6).png" alt="">
+                            <button class="product-btn">Add to cart</button>
+                        </div>
+                        <div class="item px-4">
+                            <div class="box py-2">
+                                <button class="new ">New</button>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <img src="images/Rectangle 83 (7).png" alt="">
+                            <button class="product-btn">Add to cart</button>
+                        </div>
+                        <div class="item px-4">
+                            <div class="box py-2">
+                                <button class="new ">New</button>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <img src="images/Rectangle 82 (4).png" alt="">
+                            <button class="product-btn">Add to cart</button>
+                        </div>
+                        <div class="item px-4">
+                            <div class="box py-2">
+                                <button class="new ">New</button>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <img src="images/Rectangle 83 (6).png" alt="">
+                            <button class="product-btn">Add to cart</button>
+                        </div>
+                        <div class="item px-4">
+                            <div class="box py-2">
+                                <button class="new ">New</button>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <img src="images/Rectangle 82 (4).png" alt="">
+                            <button class="product-btn">Add to cart</button>
+                        </div>
+                        <div class="item px-4">
+                            <div class="box py-2">
+                                <button class="new ">New</button>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <img src="images/Rectangle 82 (4).png" alt="">
+                            <button class="product-btn">Add to cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- footer-section -->
+    <section class="footer">
+        <div class="container">
+            <div class="row footer-panel1">
+                <div class="col-6 signup">
+                    <p><i class="fas fa-envelope px-2"></i>Sign Up To Shop Now</p>
+                </div>
+                <div class="col-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter Your Email"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="footer-panel2">
+                        <ul>
+                            <p>Contact Us</p>
+                            <a href="">careers</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact</a>
+                            <a href="">+25470101010</a>
+                            <a href="">Amazon sciences</a>
+                        </ul>
+                        <ul>
+                            <p>Information</p>
+                            <a href="">careers</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact</a>
+                            <a href="">Investor relations</a>
+                            <a href="">Blogs</a>
+                        </ul>
+                        <ul>
+                            <p>Account</p>
+                            <a href="">careers</a>
+                            <a href="">Blog</a>
+                            <a href="">About Amazon</a>
+                            <a href="">Terms Of Service</a>
+                            <a href="">Help</a>
+                        </ul>
+                        <ul>
+                            <p>Quick Links</p>
+                            <a href="https://www.google.com">careers</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact</a>
+                            <a href="">Contact</a>
+                            <a href="">Cone Dhoop</a>
+                        </ul>
+                        <ul>
+                            <p>Social Media.</p>
+                            <a href="https://www.google.com">careers</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact</a>
+                            <a href="">Cone Dhoop</a>
+
+                            <div class="footer-media">
+                                <a href="@"><i class="fab fa-facebook"></i></a>
+                                <a href="@"><i class="fab fa-twitter"></i></a>
+                                <a href="@"><i class="fab fa-linkedin"></i></a>
+                                <a href="@"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+    <!-- Script file link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                500: {
+                    items: 2
+                },
+                800: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

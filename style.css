@@ -64,6 +64,20 @@
 
 }
 
+@media (max-width:500px) {
+
+    .main-header input,
+    .input-group-text,
+    strong i {
+        /* border: 2px solid red; */
+        /* width: 120px; */
+        height: 40px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+}
+
 /* <!-- bottom-header-section --> */
 .bottom-header {
     text-align: center;
@@ -95,6 +109,12 @@
     color: #FA5C98;
 }
 
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
 /* header-nav */
 
 .header-nav nav {
@@ -106,7 +126,8 @@
 
 @media (max-width:500px) {
     .header-nav nav {
-        margin-top: 80px;
+        margin-top: 60px;
+        padding-left: 240px;
     }
 }
 
@@ -159,8 +180,8 @@
 
 /* bpractice banner -2 */
 
-.carousel {
-    transition: all 2s linear;
+.carousel-item {
+    /* transition: all 2s linear; */
 }
 
 .carousel .carousel-item img {
@@ -173,7 +194,9 @@
     display: flex;
 }
 
-.carousel-control-prev i {
+
+
+/* .carousel-control-prev i {
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -182,9 +205,9 @@
     font-weight: 900;
     z-index: 2;
 
-}
+} */
 
-.carousel-control-next i {
+/* .carousel-control-next i {
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -192,6 +215,22 @@
     color: #FA5C98;
     font-weight: 900;
     z-index: 2;
+} */
+
+@media (max-width:500px) {
+    .banner-content {
+        width: 100%;
+        padding-left: 16px;
+    }
+
+    .banner-content p {
+        font-size: 20px !important;
+        line-height: 28px !important;
+    }
+
+    .carousel-item img {
+        width: 180px !important;
+    }
 }
 
 /* Product-section */
@@ -295,10 +334,10 @@ body {
     height: 60px;
     border: 2px solid #BEBEBE33;
     border-radius: 7px;
+    padding: 20px;
 }
 
 .connect-section .connect-inputs input::placeholder {
-    padding-left: 10px;
     color: #888888;
     font-size: 14px;
     font-weight: 400;
@@ -318,6 +357,7 @@ textarea {
     height: 80px;
     margin-left: 30px;
     box-shadow: 2px 6px 13px 4px #BEBEBE33;
+    padding: 20px;
 }
 
 .connect-section .connect-image img {
@@ -387,7 +427,7 @@ textarea {
 }
 
 .footer-panel2 {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .footer-panel2 ul a {
@@ -403,7 +443,7 @@ textarea {
 .footer-panel2 .footer-media {
     display: flex;
     /* justify-content: space-evenly; */
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 
